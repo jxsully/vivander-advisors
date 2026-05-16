@@ -1,0 +1,7 @@
+/about/          /about.html        301
+/services/       /services.html     301
+/speaking/       /speaking.html     301
+/books/          /books.html        301
+/insights/       /insights.html     301
+/contact/        /contact.html      301
+/*               /index.html        404
