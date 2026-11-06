@@ -42,16 +42,23 @@
 </div></div>
 <div class="card">
 <div class="head"><span>Inquiry</span><span>Reply within 1 business day</span></div>
+<form name="contact" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field"
+  data-success-title="Thank you. We have your message."
+  data-success-text="Most replies go out within one business day, from the Vivander team."
+  data-fallback-email="michael@vivander.com">
+<input type="hidden" name="form-name" value="contact">
+<p class="form-hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
 <div class="form-grid" style="padding:16px 0;">
-<div class="field"><label>Name</label><input type="text"></div>
-<div class="field"><label>Company</label><input type="text"></div>
-<div class="field full"><label>Email</label><input type="email"></div>
-<div class="field full"><label>Interested in</label>
-<select><option>AI Literacy — executive education</option><option>AI Discovery — visibility audit</option><option>AI Scaling — from pilot to profit</option><option>Speaking / keynote</option><option>Books &amp; bulk orders</option><option>Something else</option></select></div>
-<div class="field full"><label for="message">What's on your mind?</label><textarea id="message" name="message" placeholder="Briefly — what's the question?"></textarea></div>
+<div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+<div class="field"><label for="f-company">Company</label><input id="f-company" name="company" type="text" autocomplete="organization"></div>
+<div class="field full"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+<div class="field full"><label for="f-interest">Interested in</label>
+<select id="f-interest" name="interest"><option>AI Discovery — visibility audit</option><option>AI Training — briefings &amp; workshops</option><option>AI Scaling — from pilot to profit</option><option>Executive Concierge</option><option>Speaking / keynote</option><option>Books &amp; bulk orders</option><option>Something else</option></select></div>
+<div class="field full"><label for="message">What's on your mind?</label><textarea id="message" name="message" placeholder="Briefly — what's the question?" required></textarea></div>
 </div>
-<button class="btn btn-primary" style="width:100%;justify-content:center;">Send</button>
-<div class="foot">We'll never share your details. Unsubscribe anytime.</div>
+<button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send</button>
+</form>
+<div class="foot">We'll never share your details.</div>
 </div></div></div></div></section>
 
 <section><div class="container"><div class="sec-head"><div class="eyebrow">Or pick a time</div><h2>Grab a slot directly.</h2><p class="sec-intro">A handful of 30-minute windows open this week. If none work, propose a different time in the form above.</p></div>
@@ -97,5 +104,6 @@
   if (q && box && !box.value) box.value = q.slice(0, 500);
 })();
 </script>
+<script src="forms.js" defer></script>
 <script src="search.js" defer></script>
 </body></html>

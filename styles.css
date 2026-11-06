@@ -342,3 +342,13 @@ html.search-open{overflow:hidden;}
   .search-foot{flex-direction:column;align-items:stretch;text-align:center;}
   .search-contact{justify-content:center;}
 }
+
+/* FORMS (forms.js) */
+.form-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;}
+.form-status{margin-top:12px;font-family:var(--sans);font-size:14px;line-height:1.5;}
+.form-status.is-error{color:var(--hot);}
+.form-status a{color:inherit;border-bottom:1px solid currentColor;}
+.form-done{padding:28px 0 12px;outline:none;}
+.form-done-title{font-family:var(--serif);font-size:26px;line-height:1.2;letter-spacing:-0.01em;color:var(--ink);margin:0 0 10px;}
+.form-done-text{font-family:var(--serif);font-size:17px;line-height:1.5;color:var(--ink-2);margin:0;}
+.btn[disabled]{opacity:.6;cursor:progress;transform:none;}
