@@ -1,5 +1,7 @@
 [build]
   publish = "."
+  # Rebuild the site-search index from the live pages on every deploy.
+  command = "node scripts/build-search-index.mjs"
 
 [[headers]]
   for = "/*"
