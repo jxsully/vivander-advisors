@@ -29,9 +29,10 @@
 
   // Maps search words to the contact form's "Interested in" options.
   var TOPICS = [
-    { words: ["discover", "visib", "chatgpt", "gemini", "perplexity", "seo", "invisible", "audit", "found", "search"], topic: "AI Discovery — visibility audit" },
-    { words: ["train", "literacy", "workshop", "educat", "claude", "cowork", "brief"], topic: "AI Literacy — executive education" },
-    { words: ["scal", "pilot", "workflow", "agent", "automat", "p&l", "roi"], topic: "AI Scaling — from pilot to profit" },
+    { words: ["concierge", "private", "1:1", "one-on-one", "personal guide", "coach"], topic: "Executive Concierge" },
+    { words: ["discover", "visib", "chatgpt", "gemini", "perplexity", "seo", "invisible", "audit", "found", "search"], topic: "AI Discovery" },
+    { words: ["train", "literacy", "workshop", "educat", "claude", "cowork", "brief"], topic: "AI Training" },
+    { words: ["scal", "pilot", "workflow", "agent", "automat", "p&l", "roi"], topic: "AI Scaling" },
     { words: ["speak", "keynote", "event", "conference", "panel", "jetson"], topic: "Speaking / keynote" },
     { words: ["book", "bulk", "author", "hats"], topic: "Books & bulk orders" }
   ];

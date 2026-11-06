@@ -53,7 +53,7 @@
 <div class="field"><label for="f-company">Company</label><input id="f-company" name="company" type="text" autocomplete="organization"></div>
 <div class="field full"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
 <div class="field full"><label for="f-interest">Interested in</label>
-<select id="f-interest" name="interest"><option>AI Literacy — executive education</option><option>AI Discovery — visibility audit</option><option>AI Scaling — from pilot to profit</option><option>Speaking / keynote</option><option>Books &amp; bulk orders</option><option>Something else</option></select></div>
+<select id="f-interest" name="interest" required><option value="" disabled selected>Choose one</option><optgroup label="Services"><option>AI Discovery</option><option>AI Training</option><option>AI Scaling</option><option>Executive Concierge</option></optgroup><optgroup label="Other"><option>Speaking / keynote</option><option>Books &amp; bulk orders</option><option>Something else</option></optgroup></select></div>
 <div class="field full"><label for="f-message">What's on your mind?</label><textarea id="f-message" name="message" placeholder="Briefly, what's the question?" required></textarea></div>
 </div>
 <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;border:none;">Send</button>
