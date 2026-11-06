@@ -20,7 +20,10 @@
       <li><a href="insights.html">Insights</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
+    <div class="nav-actions">
+    <button type="button" class="nav-search" data-search-open aria-label="Search the site"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><span class="lbl">Search</span><kbd>/</kbd></button>
     <a class="nav-cta" href="contact.html">Book a 30-min call</a>
+    </div>
   </div>
 </nav>
 <header class="page-head"><div class="container">
@@ -40,19 +43,23 @@
 <div>LinkedIn: <a href="https://www.linkedin.com/in/michaelgoldrich/">michaelgoldrich</a></div>
 <div style="margin-top:14px;">New York, NY · Engagements worldwide</div>
 </div></div>
-<div class="card">
+<form class="card" id="inquiry" name="contact" method="POST" action="contact.html?sent=1#inquiry" data-netlify="true" netlify-honeypot="company_url">
+<input type="hidden" name="form-name" value="contact">
+<input type="hidden" name="source" value="direct">
+<p class="visually-hidden"><label>Leave this empty <input name="company_url" tabindex="-1" autocomplete="off"></label></p>
 <div class="head"><span>Inquiry</span><span>Reply within 1 business day</span></div>
 <div class="form-grid" style="padding:16px 0;">
-<div class="field"><label>Name</label><input type="text"></div>
-<div class="field"><label>Company</label><input type="text"></div>
-<div class="field full"><label>Email</label><input type="email"></div>
-<div class="field full"><label>Interested in</label>
-<select><option>AI Literacy — executive education</option><option>AI Discovery — visibility audit</option><option>AI Scaling — from pilot to profit</option><option>Speaking / keynote</option><option>Books &amp; bulk orders</option><option>Something else</option></select></div>
-<div class="field full"><label>What's on your mind?</label><textarea placeholder="Briefly — what's the question?"></textarea></div>
+<div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+<div class="field"><label for="f-company">Company</label><input id="f-company" name="company" type="text" autocomplete="organization"></div>
+<div class="field full"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+<div class="field full"><label for="f-interest">Interested in</label>
+<select id="f-interest" name="interest"><option>AI Literacy — executive education</option><option>AI Discovery — visibility audit</option><option>AI Scaling — from pilot to profit</option><option>Speaking / keynote</option><option>Books &amp; bulk orders</option><option>Something else</option></select></div>
+<div class="field full"><label for="f-message">What's on your mind?</label><textarea id="f-message" name="message" placeholder="Briefly, what's the question?" required></textarea></div>
 </div>
-<button class="btn btn-primary" style="width:100%;justify-content:center;">Send</button>
+<button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;border:none;">Send</button>
+<div class="form-status" role="status" hidden>Thank you. Your question is in, and a partner will reply within one business day.</div>
 <div class="foot">We'll never share your details. Unsubscribe anytime.</div>
-</div></div></div></div></section>
+</form></div></div></div></section>
 
 <section><div class="container"><div class="sec-head"><div class="eyebrow">Or pick a time</div><h2>Grab a slot directly.</h2><p class="sec-intro">A handful of 30-minute windows open this week. If none work, propose a different time in the form above.</p></div>
 <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
@@ -89,4 +96,6 @@
     </div>
     <div class="base"><span>© 2026 Vivander Advisors · New York</span><span>Partner-led · Operator-built</span></div>
   </div>
-</footer></body></html>
+</footer><script src="search.js" defer></script>
+<script>if(/[?&]sent=1/.test(location.search)){var st=document.querySelector(".form-status");if(st)st.hidden=false;}</script>
+</body></html>
