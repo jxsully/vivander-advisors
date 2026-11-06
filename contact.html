@@ -48,7 +48,7 @@
 <div class="field full"><label>Email</label><input type="email"></div>
 <div class="field full"><label>Interested in</label>
 <select><option>AI Literacy — executive education</option><option>AI Discovery — visibility audit</option><option>AI Scaling — from pilot to profit</option><option>Speaking / keynote</option><option>Books &amp; bulk orders</option><option>Something else</option></select></div>
-<div class="field full"><label>What's on your mind?</label><textarea placeholder="Briefly — what's the question?"></textarea></div>
+<div class="field full"><label for="message">What's on your mind?</label><textarea id="message" name="message" placeholder="Briefly — what's the question?"></textarea></div>
 </div>
 <button class="btn btn-primary" style="width:100%;justify-content:center;">Send</button>
 <div class="foot">We'll never share your details. Unsubscribe anytime.</div>
@@ -89,4 +89,13 @@
     </div>
     <div class="base"><span>© 2026 Vivander Advisors · New York</span><span>Partner-led · Operator-built</span></div>
   </div>
-</footer></body></html>
+</footer><script>
+// A visitor arriving from the search panel brings their question with them.
+(function () {
+  var q = new URLSearchParams(location.search).get("q");
+  var box = document.getElementById("message");
+  if (q && box && !box.value) box.value = q.slice(0, 500);
+})();
+</script>
+<script src="search.js" defer></script>
+</body></html>
