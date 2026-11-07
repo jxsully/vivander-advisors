@@ -18,7 +18,7 @@
 <li><a href="insights.html">Insights</a></li>
 <li><a href="about.html">About</a></li>
 </ul>
-<a class="nav-cta" href="contact.html">Book a 30-min call</a>
+<a class="nav-cta" href="contact.html">Contact us</a>
 </div></nav>
 
 <header class="phero" style="padding:100px 0 110px;">
@@ -89,17 +89,21 @@
 
 <section class="cta"><div class="container"><div class="row">
 <div><div class="avail" style="margin-bottom:22px;"><span class="dot"></span>Reply within 1 business day — usually same day</div>
-<h2>Thirty minutes, then a <em>real</em> answer.</h2>
-<p class="pitch">Tell us your brand, your top three competitors, and one question your customers are probably asking ChatGPT right now. We will run it, live, on the call. You'll leave knowing exactly where you stand.</p>
-<div class="side"><div>Email: <a href="mailto:michael@vivander.com">michael@vivander.com</a></div><div>Or <a href="contact.html">book a slot</a> directly.</div></div></div>
+<h2>One request, then a <em>real</em> answer.</h2>
+<p class="pitch">Tell us your brand, your top three competitors, and one question your customers are probably asking ChatGPT right now. We'll run it across the major answer engines and write back with exactly where you stand.</p>
+<div class="side"><div>Email: <a href="mailto:michael@vivander.com">michael@vivander.com</a></div><div>Or <a href="contact.html">send a message</a>.</div></div></div>
 <div class="card"><div class="head"><span>Request access</span><span>Don't Be Invisible</span></div>
+<form name="platform-access" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+<input type="hidden" name="form-name" value="platform-access">
+<p hidden><label>Leave this empty: <input name="bot-field"></label></p>
 <div class="form-grid" style="padding:16px 0;">
-<div class="field"><label>Name</label><input type="text"></div>
-<div class="field"><label>Company</label><input type="text"></div>
-<div class="field full"><label>Email</label><input type="email"></div>
-<div class="field full"><label>Top 3 competitors</label><input type="text" placeholder="Comma-separated"></div>
-<div class="field full"><label>One question your customers probably ask</label><textarea placeholder="e.g. 'Best family-friendly hotels in Napa under $600'"></textarea></div>
-</div><button class="btn btn-primary" style="width:100%;justify-content:center;">Request access</button>
+<div class="field"><label>Name</label><input name="name" type="text" required></div>
+<div class="field"><label>Company</label><input name="company" type="text"></div>
+<div class="field full"><label>Email</label><input name="email" type="email" required></div>
+<div class="field full"><label>Top 3 competitors</label><input name="competitors" type="text" placeholder="Comma-separated"></div>
+<div class="field full"><label>One question your customers probably ask</label><textarea name="question" placeholder="e.g. 'Best family-friendly hotels in Napa under $600'"></textarea></div>
+</div><button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Request access</button>
+</form>
 <div class="foot">We'll respond with a 60-second sample of what Don't Be Invisible sees about your brand today.</div>
 </div></div></div></section>
 
@@ -108,6 +112,6 @@
 <div class="tag">Helping executive teams become visible to AI, fluent with it, and better at the jobs it's changing.</div></div>
 <div><h5>Product</h5><ul><li><a href="dont-be-invisible.html">Don't Be Invisible</a></li><li><a href="dont-be-invisible.html#how">How it works</a></li><li><a href="dont-be-invisible.html#access">Request access</a></li></ul></div>
 <div><h5>Services</h5><ul><li><a href="services.html#literacy">AI Literacy &amp; Training</a></li><li><a href="services.html#claude">Claude coworking</a></li><li><a href="services.html#scaling">AI Scaling</a></li><li><a href="speaking.html">Speaking</a></li></ul></div>
-<div><h5>The firm</h5><ul><li><a href="about.html">About</a></li><li><a href="books.html">Books</a></li><li><a href="insights.html">Insights</a></li><li><a href="contact.html">Book a call</a></li></ul></div>
+<div><h5>The firm</h5><ul><li><a href="about.html">About</a></li><li><a href="books.html">Books</a></li><li><a href="insights.html">Insights</a></li><li><a href="contact.html">Contact us</a></li></ul></div>
 </div><div class="base"><span>© 2026 Vivander Advisors · New York</span><span>Partner-led · Operator-built</span></div></div></footer><script src="search.js" defer></script>
 </body></html>

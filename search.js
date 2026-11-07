@@ -75,8 +75,8 @@
       text: "Ownership, not technology, is where most AI pilots fail. What to do about it.",
       keywords: "pilot ownership roi fail" },
     { id: "contact", title: "Contact us", page: "Contact", url: "contact.html", topic: "other",
-      text: "Send a message or book a 30-minute call. Most replies go out within one business day.",
-      keywords: "contact email call book meeting talk reach phone message hello inquiry price pricing cost quote" }
+      text: "Send a message through the form or email hello@vivander.com. A partner replies within one business day.",
+      keywords: "contact email form write reach message hello inquiry question call phone meeting price pricing cost quote" }
   ];
 
   /* ---------- Guided questions ---------- */
@@ -154,7 +154,7 @@
   var overlay, input, body, cta, lastFocus, activeIdx = -1, currentTopic = "other";
 
   function build() {
-    // Nav trigger, placed beside the Book a call button.
+    // Nav trigger, placed beside the Contact us button.
     var navCta = document.querySelector("nav.top .nav-cta");
     if (navCta) {
       var wrap = el("div", { "class": "nav-actions" });
