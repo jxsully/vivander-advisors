@@ -47,8 +47,8 @@
 <div class="field"><label>Company</label><input type="text"></div>
 <div class="field full"><label>Email</label><input type="email"></div>
 <div class="field full"><label>Interested in</label>
-<select><option>AI Literacy — executive education</option><option>AI Discovery — visibility audit</option><option>AI Scaling — from pilot to profit</option><option>Speaking / keynote</option><option>Books &amp; bulk orders</option><option>Something else</option></select></div>
-<div class="field full"><label>What's on your mind?</label><textarea placeholder="Briefly — what's the question?"></textarea></div>
+<select id="contact-interest"><option data-topic="training">AI Literacy — executive education</option><option data-topic="discovery">AI Discovery — visibility audit</option><option data-topic="scaling">AI Scaling — from pilot to profit</option><option data-topic="concierge">Executive Concierge (private advisor)</option><option data-topic="speaking">Speaking / keynote</option><option data-topic="books">Books &amp; bulk orders</option><option data-topic="other">Something else</option></select></div>
+<div class="field full"><label>What's on your mind?</label><textarea id="contact-message" placeholder="Briefly — what's the question?"></textarea></div>
 </div>
 <button class="btn btn-primary" style="width:100%;justify-content:center;">Send</button>
 <div class="foot">We'll never share your details. Unsubscribe anytime.</div>
@@ -89,4 +89,5 @@
     </div>
     <div class="base"><span>© 2026 Vivander Advisors · New York</span><span>Partner-led · Operator-built</span></div>
   </div>
-</footer></body></html>
+</footer><script src="search.js" defer></script>
+</body></html>
