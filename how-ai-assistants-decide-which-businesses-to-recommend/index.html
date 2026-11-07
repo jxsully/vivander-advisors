@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How Do AI Assistants Decide Which Businesses to Recommend?</title>
+<meta name="description" content="AI assistants recommend a business in three steps: retrieve pages about it, select the fragments that answer the question, and cite the sources that agree. Most fail at step one.">
+<link rel="canonical" href="https://vivanderadvisors.com/how-ai-assistants-decide-which-businesses-to-recommend/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How Do AI Assistants Decide Which Businesses to Recommend?">
+<meta property="og:description" content="AI assistants recommend a business in three steps: retrieve pages about it, select the fragments that answer the question, and cite the sources that agree. Most fail at step one.">
+<meta property="og:url" content="https://vivanderadvisors.com/how-ai-assistants-decide-which-businesses-to-recommend/">
+<meta property="og:site_name" content="Vivander Advisors">
+<meta property="og:image" content="https://vivanderadvisors.com/wp-content/uploads/2026/09/17-how-ai-assistants-decide-which-businesses-to-recommend-1.png.perf.webp">
+<meta property="article:published_time" content="2026-08-14T15:42:02+00:00">
+<meta property="article:modified_time" content="2026-11-06T15:47:14+00:00">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://vivanderadvisors.com/how-ai-assistants-decide-which-businesses-to-recommend/#article","isPartOf":{"@id":"https://vivanderadvisors.com/how-ai-assistants-decide-which-businesses-to-recommend/"},"author":{"name":"Michael J. Goldrich","@id":"https://vivanderadvisors.com/#/schema/person/ab889df45b5d0eeb2de2b3e8b2afef60"},"headline":"How do AI assistants decide which businesses to recommend?","datePublished":"2026-08-14T15:42:02+00:00","dateModified":"2026-11-06T15:47:14+00:00","mainEntityOfPage":{"@id":"https://vivanderadvisors.com/how-ai-assistants-decide-which-businesses-to-recommend/"},"wordCount":2551,"publisher":{"@id":"https://vivanderadvisors.com/#organization"},"image":{"@id":"https://vivanderadvisors.com/how-ai-assistants-decide-which-businesses-to-recommend/#primaryimage"},"thumbnailUrl":"https://vivanderadvisors.com/wp-content/uploads/2026/09/17-how-ai-assistants-decide-which-businesses-to-recommend-1.png.perf.webp","articleSection":["Answers"],"inLanguage":"en-US","about":{"@type":"Thing","name":"AI visibility and discoverability"}},{"@type":"WebPage","@id":"https://vivanderadvisors.com/how-ai-assistants-decide-which-businesses-to-recommend/","url":"https://vivanderadvisors.com/how-ai-assistants-decide-which-businesses-to-recommend/","name":"How Do AI Assistants Decide Which Businesses to Recommend?","isPartOf":{"@id":"https://vivanderadvisors.com/#website"},"primaryImageOfPage":{"@id":"https://vivanderadvisors.com/how-ai-assistants-decide-which-businesses-to-recommend/#primaryimage"},"image":{"@id":"https://vivanderadvisors.com/how-ai-assistants-decide-which-businesses-to-recommend/#primaryimage"},"thumbnailUrl":"https://vivanderadvisors.com/wp-content/uploads/2026/09/17-how-ai-assistants-decide-which-businesses-to-recommend-1.png.perf.webp","datePublished":"2026-08-14T15:42:02+00:00","dateModified":"2026-11-06T15:47:14+00:00","description":"AI assistants recommend a business in three steps: retrieve pages about it, select the fragments that answer the question, and cite the sources that agree. Most fail at step one.","breadcrumb":{"@id":"https://vivanderadvisors.com/how-ai-assistants-decide-which-businesses-to-recommend/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://vivanderadvisors.com/how-ai-assistants-decide-which-businesses-to-recommend/"]}],"about":{"@type":"Thing","name":"AI visibility and discoverability"},"publisher":{"@id":"https://vivanderadvisors.com/#organization"}},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://vivanderadvisors.com/how-ai-assistants-decide-which-businesses-to-recommend/#primaryimage","url":"https://vivanderadvisors.com/wp-content/uploads/2026/09/17-how-ai-assistants-decide-which-businesses-to-recommend-1.png.perf.webp","contentUrl":"https://vivanderadvisors.com/wp-content/uploads/2026/09/17-how-ai-assistants-decide-which-businesses-to-recommend-1.png.perf.webp","width":1672,"height":941,"caption":"Several source documents feed through a selection process toward a hotel recommendation."},{"@type":"BreadcrumbList","@id":"https://vivanderadvisors.com/how-ai-assistants-decide-which-businesses-to-recommend/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vivanderadvisors.com/"},{"@type":"ListItem","position":2,"name":"Answers","item":"https://vivanderadvisors.com/?page_id=900015"},{"@type":"ListItem","position":3,"name":"How do AI assistants decide which businesses to recommend?"}]},{"@type":"WebSite","@id":"https://vivanderadvisors.com/#website","url":"https://vivanderadvisors.com/","name":"Vivander Advisors","description":"Vivander Advisors helps organizations improve AI visibility, build AI fluency, and adopt AI through consulting, training, research, and fractional leadership within their existing teams.","publisher":{"@id":"https://vivanderadvisors.com/#organization"},"inLanguage":"en-US"},{"@type":"Organization","@id":"https://vivanderadvisors.com/#organization","name":"Vivander Advisors","alternateName":"Vivander","url":"https://vivanderadvisors.com/","logo":{"@type":"ImageObject","@id":"https://vivanderadvisors.com/#/schema/logo/image/","url":"https://vivanderadvisors.com/wp-content/uploads/2026/10/vivander-logo-transparent.png","contentUrl":"https://vivanderadvisors.com/wp-content/uploads/2026/10/vivander-logo-transparent.png","caption":"Vivander Advisors","inLanguage":"en-US","width":1774,"height":887},"image":{"@id":"https://vivanderadvisors.com/#/schema/logo/image/"},"sameAs":["https://www.linkedin.com/company/vivander-advisors"],"description":"Vivander Advisors helps organizations improve AI visibility, build AI fluency, and adopt AI through consulting, training, research, and fractional leadership within their existing teams.","email":"info@vivander.com","telephone":"+1-347-414-7040","founder":{"@id":"https://vivanderadvisors.com/#/schema/person/ab889df45b5d0eeb2de2b3e8b2afef60"},"address":{"@type":"PostalAddress","addressLocality":"New York City","addressRegion":"NY","addressCountry":"US"},"contactPoint":{"@type":"ContactPoint","contactType":"Business inquiries","email":"info@vivander.com","telephone":"+1-347-414-7040","url":"https://vivanderadvisors.com/contact.html"}},{"@type":"Person","@id":"https://vivanderadvisors.com/#/schema/person/ab889df45b5d0eeb2de2b3e8b2afef60","name":"Michael J. Goldrich","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://secure.gravatar.com/avatar/b9456ace8f3c1303154bae8db17b616a8a59b8088add2062c0a62e63555cc710?s=96&d=mm&r=g","url":"https://secure.gravatar.com/avatar/b9456ace8f3c1303154bae8db17b616a8a59b8088add2062c0a62e63555cc710?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/b9456ace8f3c1303154bae8db17b616a8a59b8088add2062c0a62e63555cc710?s=96&d=mm&r=g","caption":"Michael J. Goldrich"},"url":"https://vivanderadvisors.com/about.html","jobTitle":"Founder and Chief Advisor","worksFor":{"@id":"https://vivanderadvisors.com/#organization"},"sameAs":["https://www.linkedin.com/in/michaelgoldrich"]},{"@type":"LearningResource","@id":"https://vivanderadvisors.com/how-ai-assistants-decide-which-businesses-to-recommend/#guide","name":"How do AI assistants decide which businesses to recommend?","url":"https://vivanderadvisors.com/how-ai-assistants-decide-which-businesses-to-recommend/","description":false,"learningResourceType":"Practical guide","about":{"@type":"Thing","name":"AI visibility and discoverability"},"inLanguage":"en","author":{"@id":"https://vivanderadvisors.com/#/schema/person/ab889df45b5d0eeb2de2b3e8b2afef60"},"publisher":{"@id":"https://vivanderadvisors.com/#organization"},"isPartOf":{"@id":"https://vivanderadvisors.com/how-ai-assistants-decide-which-businesses-to-recommend/"},"datePublished":"2026-08-14T15:42:02+00:00","dateModified":"2026-11-06T15:47:14+00:00"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<link rel="alternate" type="application/rss+xml" title="Vivander Advisors" href="/feed.xml">
+</head>
+<body>
+<nav class="top">
+  <div class="container row">
+    <a href="/" class="logo">Vivander <span class="sub" style="margin-left:6px;">Advisors</span></a>
+    <ul>
+      <li><a href="/dont-be-invisible.html">Don't Be Invisible</a></li>
+      <li><a href="/services.html">Services</a></li>
+      <li><a href="/books.html">Books</a></li>
+      <li><a href="/speaking.html">Speaking</a></li>
+      <li><a href="/insights.html">Insights</a></li>
+      <li><a href="/about.html">About</a></li>
+    </ul>
+    <a class="nav-cta" href="/contact.html">Book a 30-min call</a>
+  </div>
+</nav>
+<main><article class="prose article-body article-own-head">
+<div class="et_pb_section et_pb_section_317 et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_317">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_317  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_288  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h1 id="how-do-ai-assistants-decide-which-businesses-to-recommend">How do AI assistants decide which businesses to recommend?</h1>
+<p class="vivander-topic-context" style="font-size:16px;line-height:1.7">Vivander Advisors helps businesses understand how AI describes and recommends them. This guide connects AI discoverability with clear business facts, buyer questions and evidence you can inspect.</p>
+<p class="answer-byline">Michael J. Goldrich · <time datetime="2026-09">September 2026</time></p>
+<p>Three gates, in order. The assistant retrieves pages about the topic from an index or a live crawl. It parses those pages into fragments and picks the ones that answer the question directly. Then it assembles an answer from the fragments that agree with each other and cites the sources it used. Fail the first gate and you never reach the second. I built the Vivander AI Visibility Audit around that order, because most businesses missing from AI answers are failing at retrieval, and content work aimed at the third gate cannot fix a failure at the first.</p>
+<p>Most of the advice in this field starts at gate three. That is why so much of it makes things worse.</p></div>
+			</div><div class="et_pb_module et_pb_image et_pb_image_58 vivander-original-image">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img decoding="async" width="1672" height="941" src="/wp-content/uploads/2026/09/17-how-ai-assistants-decide-which-businesses-to-recommend-1.png.perf.webp" alt="Several source documents feed through a selection process toward a hotel recommendation." title="" class="wp-image-900650" /></span>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_318 et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_318">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_318  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_289  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2 id="gate-one-retrieval">Gate one: retrieval</h2>
+<p>Every answer starts with a fetch. ChatGPT with search, Perplexity, Gemini and Google&#39;s AI surfaces all query an index or pull pages live before they write a word. If your pages are not in that index, or the assistant&#39;s crawler cannot read them, you do not exist for that question.</p>
+<p>Write the probability of being cited as a chain. The chance the topic triggers a search. Times the chance your page is retrieved given that search. And then the chance your fragment is chosen given retrieval.</p>
+<p>Content quality is the third term. The first two dominate.</p>
+<p>A 2026 study called SAGEO Arena, by Kim and colleagues, tested 171,003 documents across 2,700 queries and did something most GEO research skips: it reinstated retrieval instead of pre-loading the page into the model. Body-only optimization reduced top-20 presence by about 9 percent, top-10 presence after reranking by 16 percent, and final citation by 6 percent.</p>
+<p>Read that again. Rewriting a page nobody retrieved made it less likely to be cited.</p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_319 et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_319">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_319  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_290  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2 id="gate-two-selection">Gate two: selection</h2>
+<p>Assistants do not rank pages. They dismantle them.</p>
+<p>Microsoft&#39;s own description is that assistants break content into smaller structured pieces and evaluate each for authority and relevance. DEJAN read Google&#39;s grounding output across 883,262 snippets in 2026 and found extraction happening at roughly fifteen-word chunks, with a heavy lead bias. Opening paragraphs lifted almost whole. Grounding plateauing around 540 words no matter how long the page ran.</p>
+<p>Selection favors the fragment that answers. A 2026 study by Vishwakarma and colleagues ran 252,000 trials across six models with page length held constant and found four factors every model treated as a gate: no price, low position in a list, an old timestamp, hedged language. Odds ratios above 100 on all six. The corpus was product reviews, so I will not pretend the number transfers to a hotel page. Its direction matches everything else I see.</p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_320 et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_320">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_320  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_291  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2 id="gate-three-corroboration">Gate three: corroboration</h2>
+<p>Assistants prefer facts that more than one source agrees on, and they prefer the sources their platform trusts for your category.</p>
+<p>Ahrefs&#39; study of 75,000 brands, restated in their December 2025 follow-up, found branded web mentions correlating with AI visibility at 0.664 on ChatGPT and 0.709 on AI Mode. Backlinks: 0.218 on AI Overviews. Mentions outpredict links. Ahrefs sells the tool that measures the winning metric, so read it as direction, and note that every study points the same direction.</p>
+<p>The causal evidence is stranger. In 2025 Ahrefs invented a brand, Xarumei, with zero web presence, and seeded three fabricated off-site pages against an official on-site FAQ. Gemini, AI Mode, Perplexity, Grok and Copilot all flipped from &quot;this brand does not exist&quot; to reciting the fabrications. ChatGPT held to the official page. Claude never ingested the site.</p>
+<p>Three pages moved five engines. One brand, no control, vendor-run, and still the clearest demonstration anyone has produced that a few off-site sources define what AI says about you.</p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_321 et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_321">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_321  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_292  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2 id="why-the-platforms-disagree">Why the platforms disagree</h2>
+<p>Each one runs its own retrieval and trusts its own sources. URL-level overlap between engines runs between 11 and 18 percent. A 45-study review put it plainly: the results refute the notion of a global GEO ranking.</p>
+<p>ChatGPT&#39;s most-cited domain is Wikipedia. Gemini&#39;s and Perplexity&#39;s is Reddit. For hotel questions, Booking.com and Airbnb frequently outrank all of them, per Peec AI&#39;s March 2026 read of 30 million sources.</p>
+<p>Any advice that treats &quot;AI search&quot; as one channel is wrong before it starts.</p></div>
+			</div><div class="et_pb_module et_pb_image et_pb_image_59 vivander-original-image">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img decoding="async" src="/wp-content/uploads/2026/09/17-how-ai-assistants-decide-which-businesses-to-recommend-2.png.perf.webp" alt="A customer question connects to supporting sources and a selected hotel." title="" /></span>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_322 et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_322">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_322  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_293  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2 id="three-things-worth-sitting-with">Three things worth sitting with</h2>
+<p>For your business. Confirm retrieval before you touch a word of content. Crawlers allowed. Facts in the initial HTML. Something of yours cited for something.</p>
+<p>For your role. The first gate is technical, the second is editorial, the third is reputational. In most hotel companies those are three departments. Somebody has to hold the sequence.</p>
+<p>For your customers. They see one answer. Nobody tells them it was assembled from twelve fragments and that yours failed at the door.</p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_323 et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_323">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_323  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_294  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2 id="what-i-do-not-know">What I do not know</h2>
+<p>Whether the retrieval gate&#39;s premise holds for your pages. SAGEO proved body-only optimization can be net negative in its corpus. Whether a material share of your pages are unretrieved is a question only a test on your site answers. I run that test first.</p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_324 et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_324">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_324  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_295  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2 id="where-this-is-going">Where this is going</h2>
+<p>The retrieval step is getting shorter and the agent on the other end is getting more capable. Google&#39;s agents already call a booking endpoint and award the lead to whoever answers with a real slot. The three gates are not going away. They are being compressed into one conversation, with a customer who never sees the machinery.</p>
+<p>I ran an audit for a resort that ranked on page one for its market and was recommended in one of fifty prompts. Its rate lived in a booking widget the crawlers could not read. Nothing a copywriter could have fixed. The first gate was closed, and everyone was polishing the third.</p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_325 et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_325">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_325  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_296  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2 id="related-questions">Related questions</h2>
+<ul>
+<li><a href="/does-ai-read-my-website/">Does AI read my website at all?</a></li>
+<li><a href="/what-a-page-needs-for-ai-to-recommend-it/">What has to be on a page for AI to recommend it?</a></li>
+<li><a href="/which-sources-ai-platforms-cite/">Which sources do ChatGPT, Gemini, Perplexity and Google AI actually cite?</a></li>
+</ul>
+<p><a href="/products/vivander-audit/"><strong>Diagnose in gate order.</strong> The Vivander AI Visibility Audit runs the retrieval check before any content recommendation ships. Scope an audit.</a></p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_326 vivander-page-metadata et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_326">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_326  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_code et_pb_code_29">
+				
+				
+				
+				
+				<div class="et_pb_code_inner"><style>.vivander-page-metadata{display:none!important}.vivander-original-image img{display:block;width:auto;max-width:100%;height:auto;max-height:510px;margin:0 auto;border-radius:8px}.vivander-original-image .et_pb_image_wrap{display:block}@media(max-width:767px){.vivander-original-image img{max-height:340px}}</style><style>.vivander-review-form .et_pb_contact_form_label{display:block!important;position:static!important;margin:0 0 8px}.vivander-review-form input,.vivander-review-form textarea,.vivander-review-form select{border:1px solid #64777a!important}.vivander-review-form button,a,button{cursor:pointer}</style><section style="max-width:840px;margin:34px auto;padding:24px;border-top:2px solid #b44c38"><h2>Related Vivander guidance and support</h2><p><a href="/how-to-improve-ai-search-visibility/">Explore Vivander’s ai visibility and discoverability guide</a> and <a href="/products/vivander-audit/">Vivander AI visibility audit</a>. Learn about <a href="/about-us/">Michael J. Goldrich, founder and chief advisor of Vivander Advisors</a>, and explore his <a href="/writing/#cover-stories">published Hospitality Upgrade cover stories</a>.</p> </section></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_327 et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_327">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_327  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_297  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2>Investigate what buyers hear about your business</h2>
+<p>Compare <a href="/products/vivander-audit/">Vivander’s AI visibility audit</a> with <a href="/products/visibility-monitoring/">ongoing visibility monitoring</a>. Use the findings to prioritize work with your team and existing partners.</p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>
+</article>
+<aside class="article-cta container-narrow">
+<p>Want to know how ChatGPT, Gemini, Perplexity and Claude describe your business today?</p>
+<a class="btn btn-primary" href="/contact.html">Book a 30-min call →</a>
+</aside></main>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div>
+        <div class="mark">Vivander <span class="sub">Advisors</span></div>
+        <div class="tag">Helping executive teams become visible to AI, fluent with it, and better at the jobs it's changing.</div>
+      </div>
+      <div><h5>Product</h5><ul>
+        <li><a href="/dont-be-invisible.html">Don't Be Invisible</a></li>
+        <li><a href="/dont-be-invisible.html#how">How it works</a></li>
+        <li><a href="/dont-be-invisible.html#access">Request access</a></li>
+      </ul></div>
+      <div><h5>Services</h5><ul>
+        <li><a href="/services.html#discovery">AI Discovery</a></li>
+        <li><a href="/services.html#training">AI Literacy &amp; Training</a></li>
+        <li><a href="/services.html#scaling">AI Scaling</a></li>
+        <li><a href="/speaking.html">Speaking</a></li>
+      </ul></div>
+      <div><h5>The firm</h5><ul>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/books.html">Books</a></li>
+        <li><a href="/insights.html">Insights</a></li>
+        <li><a href="/contact.html">Book a call</a></li>
+      </ul></div>
+    </div>
+    <div class="base"><span>© 2026 Vivander Advisors · New York</span><span>Partner-led · Operator-built</span></div>
+  </div>
+</footer>
+</body></html>
